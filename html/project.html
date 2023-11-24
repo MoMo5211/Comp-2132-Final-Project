@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript /project.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>        
+    <header>
+        <h1>Comp 2132 Final Project-Mo Zheng</h1>
+    </header>
+    
+    <div id="popup">
+        <p id="winnerMessage"></p>
+        <button id="confirmButton">Confirm</button>
+    </div>
+    <div class="game-container">
+        <h1>Dice Game</h1>
+
+        <div class="dice-section"> 
+            <div class="player-dice">
+               <h2>You</h2>
+                <img src="../image/critical-role-dice.gif" alt="diceimage" id="diceImage">
+                <div class="dice">
+                <img src="dice-placeholder.png" alt="Player's dice" id="playerDice1">
+                <img src="dice-placeholder.png" alt="Player's dice" id="playerDice2"></div>
+            </div>
+            <div class="computer-dice">
+                <h2>Computer</h2>
+                <img src="../image/dice-bae-dice.gif" alt="diceimage" id="diceImage2">
+                <div class="dice">
+                <img src="dice-placeholder.png" alt="Computer's dice" id="computerDice1">
+                <img src="dice-placeholder.png" alt="Computer's dice" id="computerDice2"></div>
+            </div>
+        </div>
+        <div class="score-section">
+            <div class="player-score">
+                <h3>Current Score: <span id="currentPlayerScore">0</span></h3>
+                <h3>Total Score: <span id="playerScore">0</span></h3>
+            </div>
+            <div class="computer-score">
+                <h3>Current Score: <span id="currentComputerScore">0</span></h3>
+                <h3>Total Score: <span id="computerScore">0</span></h3>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="rollButton">Roll Dice</button>
+            <button id="resetButton">New Game</button>
+        </div>
+    </div>
+</body>
+</html>

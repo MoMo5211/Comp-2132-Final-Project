@@ -1,0 +1,5 @@
+@mixin rounded-shaded-box($xoffset, $yoffset, $rounded-corners, $border-color){
+    box-shadow:$xoffset $yoffset 8px rgba(0, 0, 0, 0.1);	  
+    border-radius:$rounded-corners;    
+    border: 5px solid $border-color;
+}
